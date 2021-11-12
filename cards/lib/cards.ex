@@ -36,6 +36,7 @@ defmodule Cards do
       "Three of Hearts", "Four of Hearts", "Five of Hearts", "Ace of Diamonds",
       "Two of Diamonds", "Three of Diamonds", "Four of Diamonds", "Five of Diamonds"]
       iex> Cards.shuffle(deck)
+
   """
   def shuffle(deck) do
     Enum.shuffle(deck)
@@ -53,6 +54,7 @@ defmodule Cards do
       "Two of Diamonds", "Three of Diamonds", "Four of Diamonds", "Five of Diamonds"]
       iex> Cards.contain?(deck, "Two of Spades")
       true
+
   """
 
   def contain?(deck, card) do
@@ -81,6 +83,7 @@ defmodule Cards do
   ## Examples
 
         iex> Cards.create_hand(1)
+
   """
 
   def create_hand(hand_size) do
@@ -99,6 +102,7 @@ defmodule Cards do
 
       iex> deck = Cards.create_deck
       iex> Cards.save(deck, "deck")
+
   """
 
   def save(deck, filename) do
@@ -113,6 +117,7 @@ defmodule Cards do
       iex> deck = Cards.create_deck
       iex> Cards.save(deck, "deck")
       iex> Cards.load("deck")
+
   """
 
   def load(filename) do

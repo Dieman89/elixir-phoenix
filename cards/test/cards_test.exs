@@ -10,6 +10,7 @@ defmodule CardsTest do
 
   test "shuffle changes the position of the cards in a deck" do
     deck = Cards.create_deck()
+
     shuffled_deck = Cards.shuffle(deck)
     refute deck == shuffled_deck
   end
