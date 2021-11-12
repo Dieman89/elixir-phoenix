@@ -39,4 +39,12 @@ defmodule CardsTest do
   test "create_hand method deals the right amount of cards" do
     length(Cards.create_hand(5)) == 5
   end
+
+  test "save method creates a file in the root directory and then loads the same content" do
+    deck = Cards.create_deck
+    Cards.save(deck, "test_deck")
+    assert File.regular?("test_deck") == true
+    assert Cards.load("test_deck") == deck
+    File.rm("test_deck")
+  end
 end
