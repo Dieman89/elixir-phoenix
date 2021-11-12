@@ -19,7 +19,7 @@ To run this, you need to install [Elixir](https://elixir-lang.org/install.html).
 
 ## Documentation
 
-![MarineGEO circle logo](/img/docs.png "Cards Module Documentation")
+![Docs Image](img/docs.png)
 
 I have added a documentation with examples with ex_doc tool.
 
