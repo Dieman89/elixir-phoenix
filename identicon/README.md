@@ -6,6 +6,10 @@
 
 A second project to enhance and strength my Elixir knowledge. This module generates an image from a string through. The string is converted to an MD5 hash that is then manipulated. The data structure used is a Struct that stores data throughout the whole pipeline and workflow of the code.
 
+<p align="center" width="100%">
+    <img width="50%" src="img/mockup.png">
+</p>
+
 ---
 
 **NOTE**:
